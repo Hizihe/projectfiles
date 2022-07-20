@@ -1,0 +1,132 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form creation</title>
+    </head>
+    <style>
+        /** 
+        This is a documentation comment
+        @ body: style body tag: set backgroun color, margin and padding
+        @social icon: social icon is a class to style the icons and hover
+        @form: style form tag: set background color, width,height,margin,text align and border
+        @form heading: form heading is an id to style the form heading font size and padding
+        @social wrapper: social wrapper is an id to style the social wrapper background color and padding
+        @input wrapper: input wraper is an id to style the input wrapper padding
+        @input box: input box is a class to style the input box font size,padding,margin,border, width and hover 
+        @btn submit: btn submit is an id to syle the btn submit background color,padding, font size, color, border and hover
+        **/
+        body{
+            background-color: #f2f6ff;
+            margin: 0;
+            padding: 15px;
+        }
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .social-icon:hover{
+            background-color: rgb(218, 218, 218);
+            border-radius: 50px;
+            border-width: 100px;
+            border-bottom-left-radius: 10px;
+        }
+        form{
+            background-color: white;
+            width: 600px;
+            height: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border: 2px solid rgb(138, 93, 93);
+        }
+        #form-heading{
+            font-size: 32px;
+            padding-top: 60px;
+            padding-bottom: 32px;
+        }
+        #social-wrapper{
+            background-color: #f2f6ff;
+            padding: 20px;
+        }
+        #input-wrapper{
+            padding-top: 75px;
+            padding-bottom: 45px;
+            padding-left: 100px;
+            padding-right: 120px;
+        }
+        .input-box{
+            font-size: 12px;
+            padding-bottom: 10px;
+            margin-bottom: 26px;
+            border:0px;
+            border-bottom: 1px solid #ccc;
+            width: 100%;
+        }
+        .input-box:hover{
+            background-color: rgb(186, 211, 236);
+        }
+        #btn-submit{
+            background-color: #0056ff;
+            padding-top: 12px;
+            padding-bottom:12px;
+            padding-left: 24px;
+            padding-right: 24px;
+            font-size:12px;  
+            color: white;
+            border: none;
+        }
+        #btn-submit:hover{
+            background-color: rgb(187, 230, 230);
+        }
+    </style>
+    <body>
+        <form>
+            <h1 id="form-heading">Register</h1>
+            <div id="social-wrapper">
+                <image class="social-icon" src="https://freepngimg.com/thumb/google/67060-play-photos-search-google-account-png-file-hd.png" alt="Google logo"/>
+                <image class="social-icon" src="https://www.vhv.rs/dpng/d/47-473504_fb-round-logo-png-transparent-png.png" alt="Facebook Logo"/>
+                <image class="social-icon" src="https://pngimg.com/uploads/github/github_PNG58.png" alt="github logo"/>
+                <image class="social-icon" src="https://cdn.freebiesupply.com/logos/large/2x/linkedin-icon-logo-png-transparent.png" alt="linkedin logo"/>
+            </div>
+
+            <div id="input-wrapper"> 
+                <div>
+                    <input class="input-box"
+                     type="text"
+                     name="username"
+                     placeholder="username"> 
+                </div>
+                <div>
+                    <input class="input-box"
+                     type="email"
+                     name="email"
+                     placeholder="Email"> 
+                </div>
+                <div>
+                    <input class="input-box"
+                     type="password"
+                     name="password"
+                     placeholder="Password">
+                </div>
+                <div>
+                    <input class="input-box"
+                     type="password"
+                     name="comfirm password"
+                     placeholder="Comfirm Password"> 
+                </div>
+            </div>
+            <div>
+              <input id="btn-submit"
+                type="submit"
+                value="Register">
+            </div>
+        </form>
+    </body>
+    </html>
